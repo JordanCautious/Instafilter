@@ -11,6 +11,8 @@
 		EC6037DE288268E80039CAF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6037DD288268E80039CAF1 /* ContentView.swift */; };
 		EC6037E0288268EF0039CAF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6037DF288268EF0039CAF1 /* Assets.xcassets */; };
 		EC6037E3288268EF0039CAF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6037E2288268EF0039CAF1 /* Preview Assets.xcassets */; };
+		EC6037EA28826AD30039CAF1 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6037E928826AD30039CAF1 /* ImageSaver.swift */; };
+		EC6037EC28826B100039CAF1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6037EB28826B100039CAF1 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EC6037DD288268E80039CAF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EC6037DF288268EF0039CAF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC6037E2288268EF0039CAF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC6037E928826AD30039CAF1 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		EC6037EB28826B100039CAF1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				EC6037DB288268E80039CAF1 /* InstafilterApp.swift */,
 				EC6037DD288268E80039CAF1 /* ContentView.swift */,
+				EC6037EB28826B100039CAF1 /* ImagePicker.swift */,
+				EC6037E928826AD30039CAF1 /* ImageSaver.swift */,
 				EC6037DF288268EF0039CAF1 /* Assets.xcassets */,
 				EC6037E1288268EF0039CAF1 /* Preview Content */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC6037DE288268E80039CAF1 /* ContentView.swift in Sources */,
+				EC6037EC28826B100039CAF1 /* ImagePicker.swift in Sources */,
+				EC6037EA28826AD30039CAF1 /* ImageSaver.swift in Sources */,
 				EC6037DC288268E80039CAF1 /* InstafilterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
