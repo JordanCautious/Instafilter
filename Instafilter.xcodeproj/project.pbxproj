@@ -11,6 +11,7 @@
 		EC3821822ABB8B7C00145441 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3821812ABB8B7C00145441 /* ContentView.swift */; };
 		EC3821842ABB8B7E00145441 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3821832ABB8B7E00145441 /* Assets.xcassets */; };
 		EC3821872ABB8B7E00145441 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3821862ABB8B7E00145441 /* Preview Assets.xcassets */; };
+		EC38218E2ABB9D7900145441 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC38218D2ABB9D7900145441 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		EC3821812ABB8B7C00145441 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EC3821832ABB8B7E00145441 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC3821862ABB8B7E00145441 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC38218D2ABB9D7900145441 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				EC38217F2ABB8B7C00145441 /* InstafilterApp.swift */,
 				EC3821812ABB8B7C00145441 /* ContentView.swift */,
+				EC38218D2ABB9D7900145441 /* ImagePicker.swift */,
 				EC3821832ABB8B7E00145441 /* Assets.xcassets */,
 				EC3821852ABB8B7E00145441 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC38218E2ABB9D7900145441 /* ImagePicker.swift in Sources */,
 				EC3821822ABB8B7C00145441 /* ContentView.swift in Sources */,
 				EC3821802ABB8B7C00145441 /* InstafilterApp.swift in Sources */,
 			);
