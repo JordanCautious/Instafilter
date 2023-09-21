@@ -9,36 +9,62 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var image: Image?
-    @State private var inputImage: UIImage?
-    @State private var showingImagePicker = false
+    @State private var filterIntensity = 0.5
     
+    @State private var showingImagePicker = false
+    @State private var inputImage: UIImage?
     
     var body: some View {
-        VStack {
-            image?
-                .resizable()
-                .scaledToFit()
-            
-            Button("Select Image") {
-                showingImagePicker = true
-            }
-            
-            Button("Save Image") {
-                guard let inputImage = inputImage else { return }
+        NavigationView {
+            VStack {
+                ZStack {
+                    Rectangle()
+                        .fill(.secondary)
+                    
+                    Text("Tap to select a picture")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                    
+                    image?
+                        .resizable()
+                        .scaledToFit()
+                }
+                .onTapGesture {
+                    showingImagePicker = true
+                }
                 
-                let imageSaver = ImageSaver()
-                imageSaver.writetoPhotoAlbum(image: inputImage)
+                HStack {
+                    Text("Intensity")
+                    Slider(value: $filterIntensity)
+                }
+                .padding(.vertical)
+                
+                HStack {
+                    Button("Change Filter") {
+                        // change filter
+                    }
+                    
+                    Spacer()
+                    
+                    Button("Save", action: save)                    
+                }
+            }
+            .padding([.horizontal, .bottom])
+            .navigationTitle("Instafilter")
+            .onChange(of: inputImage) { _ in loadImage() }
+            .sheet(isPresented: $showingImagePicker) {
+                ImagePicker(image: $inputImage)
             }
         }
-        .sheet(isPresented: $showingImagePicker) {
-            ImagePicker(image: $inputImage)
-        }
-        .onChange(of: inputImage) { _ in loadImage() }
     }
     
     func loadImage() {
         guard let inputImage = inputImage else { return }
         image = Image(uiImage: inputImage)
+    }
+    
+    func save() {
+        
     }
 }
 
