@@ -57,8 +57,8 @@
 			children = (
 				EC38217F2ABB8B7C00145441 /* InstafilterApp.swift */,
 				EC3821812ABB8B7C00145441 /* ContentView.swift */,
-				EC38218F2ABC2CD300145441 /* ImageSaver.swift */,
 				EC38218D2ABB9D7900145441 /* ImagePicker.swift */,
+				EC38218F2ABC2CD300145441 /* ImageSaver.swift */,
 				EC3821832ABB8B7E00145441 /* Assets.xcassets */,
 				EC3821852ABB8B7E00145441 /* Preview Content */,
 			);
